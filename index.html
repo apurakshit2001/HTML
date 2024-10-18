@@ -8,6 +8,7 @@
 </head>
 <body>
   <h1>Nearby Restaurants</h1>
+  <button>FInd near by restaurant</button>
   <div id="results"></div>
 
   <script>
@@ -76,8 +77,9 @@
       }
     }
 
-    // Call the function to get the user's location when the page loads
-    window.onload = getUserLocation;
+  document.getElementsByTagName('button').onclick(){
+    getUserLocation();
+  }
   </script>
 </body>
 </html>
