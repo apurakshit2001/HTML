@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filter Properties Explained</title>
+    <style>
+        body {
+            display: flex; /* Aligns all elements in a row */
+            justify-content: center; /* Centers elements horizontally */
+            align-items: center; /* Centers elements vertically */
+            flex-wrap: wrap; /* Allows elements to wrap to the next line */
+            height: 100vh; /* Full height of the viewport */
+            background-color: #f0f0f0; /* Light gray background color */
+            gap: 10px; /* Space between elements */
+            font-family: Arial, sans-serif; /* Font style for text */
+        }
+        div {
+            width: 100px; /* Box width */
+            height: 100px; /* Box height */
+            display: flex; /* Aligns text inside the box */
+            justify-content: center; /* Centers text horizontally */
+            align-items: center; /* Centers text vertically */
+            color: white; /* Text color */
+            font-size: 12px; /* Text size */
+            font-weight: bold; /* Text weight */
+            text-align: center; /* Text alignment */
+        }
+        /* Makes the box black and white when hovered over */
+        .grayscale {
+            background-color: red; /* Red box */
+        }
+        .grayscale:hover {
+            filter: grayscale(100%); /* Apply grayscale effect on hover */
+        }
+        /* Makes the box semi-transparent when hovered over */
+        .opacity {
+            background-color: blue; /* Blue box */
+        }
+        .opacity:hover {
+            filter: opacity(50%); /* 50% transparency on hover */
+        }
+        /* Adds a blur effect to the box on hover */
+        .blur {
+            background-color: green; /* Green box */
+        }
+        .blur:hover {
+            filter: blur(5px); /* Blurs the box by 5 pixels on hover */
+        }
+        /* Makes the box brighter when hovered over */
+        .brightness {
+            background-color: orange; /* Orange box */
+        }
+        .brightness:hover {
+            filter: brightness(150%); /* 150% brightness on hover */
+        }
+        /* Increases the contrast of the box when hovered over */
+        .contrast {
+            background-color: purple; /* Purple box */
+        }
+        .contrast:hover {
+            filter: contrast(200%); /* 200% contrast on hover */
+        }
+        /* Inverts the colors of the box when hovered over */
+        .invert {
+            background-color: yellow; /* Yellow box */
+            color: black; /* Black text color */
+        }
+        .invert:hover {
+            filter: invert(100%); /* Inverts colors on hover */
+        }
+        /* Gives the box a sepia (brownish) tone when hovered over */
+        .sepia {
+            background-color: pink; /* Pink box */
+        }
+        .sepia:hover {
+            filter: sepia(100%); /* Full sepia effect on hover */
+        }
+        /* Changes the color of the box when hovered over */
+        .hue-rotate {
+            background-color: cyan; /* Cyan box */
+        }
+        .hue-rotate:hover {
+            filter: hue-rotate(90deg); /* Rotates the hue by 90 degrees on hover */
+        }
+        /* Increases the intensity of colors in the box on hover */
+        .saturate {
+            background-color: brown; /* Brown box */
+        }
+        .saturate:hover {
+            filter: saturate(200%); /* 200% color saturation on hover */
+        }
+        /* Adds a shadow to the box on hover */
+        .drop-shadow {
+            background-color: gray; /* Gray box */
+        }
+        .drop-shadow:hover {
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); /* Adds a shadow with a 5px offset and 10px blur */
+        }
+    </style>
+</head>
+<body>
+    <!-- Box turns black and white on hover -->
+    <div class="grayscale">Grayscale</div>
+    
+    <!-- Box becomes semi-transparent on hover -->
+    <div class="opacity">Opacity</div>
+    
+    <!-- Box gets blurred on hover -->
+    <div class="blur">Blur</div>
+    
+    <!-- Box becomes brighter on hover -->
+    <div class="brightness">Brightness</div>
+    
+    <!-- Box gets more contrast on hover -->
+    <div class="contrast">Contrast</div>
+    
+    <!-- Box colors get inverted on hover -->
+    <div class="invert">Invert</div>
+    
+    <!-- Box turns sepia (brownish) on hover -->
+    <div class="sepia">Sepia</div>
+    
+    <!-- Box color changes on hover -->
+    <div class="hue-rotate">Hue Rotate</div>
+    
+    <!-- Box colors become more intense on hover -->
+    <div class="saturate">Saturate</div>
+    
+    <!-- Box gets a shadow on hover -->
+    <div class="drop-shadow">Drop Shadow</div>
+</body>
+</html>
